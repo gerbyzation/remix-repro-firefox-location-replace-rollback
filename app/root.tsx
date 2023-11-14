@@ -20,7 +20,7 @@ export default function App() {
 
   useEffect(() => {
     if (navigation.location?.pathname === "/news") {
-      console.log("reloading document", navigation.location.pathname);
+      console.log("replacing location with google.com");
       window.location.replace("https://www.google.com");
     }
   }, [navigation]);
